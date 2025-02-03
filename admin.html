@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav
+        class="navbar navbar-expand-sm navbar-light background"
+    >
+        <div class="container">
+            
+            <a class="navbar-brand logo" href="./index.html">
+                <img src="./Symbol.png" alt="">
+                <p>Lim Lush</p>
+            </a>
+            
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                              
+                </ul>
+                <div class="d-flex my-2 my-lg-0 navs">
+                    <a href="./index.html">Home</a>
+                    <a href="./admin.html">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Admin Dashboard -->
+  <main>
+    <section id="login-form" class="admin">
+      <h2>Admin Login</h2>
+      <form class="form-edit" >
+        <input class="form-control mt-3" type="text" id="admin-username" placeholder="Username" required>
+        <input class="form-control mt-3" type="password" id="admin-password" placeholder="Password" required>
+        <button class="btn btn-success mt-3" type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="admin-panel" class="hidden ">
+      <h2>Add New Product</h2>
+      <form id="product-form">
+        <input type="text" id="product-name" placeholder="Product Name" required>
+        <input type="number" id="product-price" placeholder="Price" required>
+        <textarea id="product-description" placeholder="Description"></textarea>
+        <input type="file" id="product-image" accept="image/*" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 eCommerce Website</p>
+  </footer>
+</body>
+<script src="./bootstrap.bundle.min.js"></script>
+</html>
